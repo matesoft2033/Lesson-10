@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+}
+p {
+    width: 50%;
+    font-size: 20px;
+}
+/* 1000px დან */
+@media only screen and (min-width: 1000px) {
+    p {
+        color: green;
+        font-weight: bold;
+    }
+}
+/* 900px ამდე */
+@media only screen and(max-width: 900px){
+    p {
+       width: 100%;
+
+    }
+}
+/* 600px ამდე */
+@media only screen and (max-width: 600px) {
+    #see-more {
+        display: block;
+    }
+    h2 {
+        display: none;
+    }
+    #text {
+        display: none;
+    }
+    p {
+        width: calc(100% - 20px);
+        padding: 10px;
+        font-size: 18px;
+    }
+    h1 {
+        padding: 10px;
+    }
+    img {
+        border-radius: 15px;
+        margin: 10px;
+        width: calc(100% - 20px);
+    }
+}
+div {
+    width: 50vw;
+    height: 20vh;
+    border: 2px solid black;
+    margin-bottom: 100px;
+}
+h1 {
+    font-size: 5vw;
+}
+#see-more {
+    display: none;
+}
